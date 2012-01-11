@@ -1,0 +1,193 @@
+#privicons-link {
+    margin: 0 10px;
+    display: inline-block;
+    opacity: 1;
+}
+#privicons-menu {
+    position: absolute;
+    display: none;
+    top: 0;
+    z-index: 10000;
+    border: solid 1px #b0b0b0;
+    background: #fff;
+    padding: 3px;
+    color: #777;
+    font-family: "droid-sans-mono-1", "droid-sans-mono-2","arial", "sans-serif";
+    font-size: 12px;
+    -webkit-user-select: none;
+    -webkit-box-shadow: 0 2px 3px #777;
+}
+#privicons-menu .txt { text-align: center }
+#privicons-menu .icon {
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    background: none 3px center no-repeat;
+    border-left-style: solid;
+    border-left-width: 3px;
+}
+#privicons-menu table {
+    border: none;
+    padding: 0;
+    border-collapse: collapse;
+}
+#privicons-menu td {
+    border: none;
+    padding: 3px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+#privicons-menu tr:hover { background-color: #dedede }
+#privicons-menu tr[data-selected="selected"] { background-color: #dedede }
+.privicons-modal-mask {
+    position: absolute;
+    left: 0;
+    background-color: white;
+    z-index: 500;
+}
+.privicons-modal-window {
+    position: absolute;
+    color: black;
+    padding: 5px;
+    z-index: 501;
+    outline: 0;
+    overflow: visible !important;
+    border: 1px solid rgba(0, 0, 0, .333);
+    box-shadow: 0 4px 16px rgba(0,0,0,.2);
+    background: #fff;
+}
+.privicons-modal-window-header {
+    position: relative;
+    color: black;
+    padding: 10px 15px 10px 15px;
+    cursor: default;
+}
+.privicons-modal-window-header-text {
+    color: black;
+    font: bold 100% arial,sans-serif;
+    cursor: default;
+}
+.privicons-modal-window-header-close {
+    position: absolute;
+    padding: 0;
+    top: 5px;
+    right: -10px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.privicons-modal-window-body {
+    background-color: #fff;
+    font-size: 90%;
+    padding: 10px !important;
+}
+.privicons-modal-window-body-content { min-height: 92px }
+.privicons-modal-window #privicons-custom-after div { padding: 5px }
+.privicons-modal-window #privicons-custom-after span {
+    width: 200px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+.privicons-modal-window #privicons-custom-after select { width: 455px }
+.privicons-modal-window #privicons-custom-after input { width: 446px }
+.privicons-modal-window-body-buttons { margin-top: 10px }
+.privicons-modal-window button {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F9F9F9), color-stop(30%,#F9F9F9), color-stop(50%,#EEEEEE), color-stop(51%,#E3E3E3)); /* webkit */
+    border: 1px solid #BBB;
+    -webkit-border-radius: 2px;
+    padding: 4px 1em;
+    color: #222;
+    line-height: 1.2em;
+    font-size: 12px;
+}
+.privicons-modal-window button:first-child { font-weight: bold }
+/*
+	glDatePicker default style
+
+	http://code.gautamlad.com/glDatePicker/
+	https://github.com/glad/glDatePicker/
+*/
+/* Calendar container div */
+div[id$="gldp"] { padding: 0 !important }
+.gldp-default {
+    float: left;
+    font-family: "trebuchet ms" !important;
+    background-color: #fff !important;
+    font-size: 0.8em !important;
+    border: solid 1px #888;
+    padding: 2px !important;
+}
+.gldp-default > div { display: none }
+/* Table style */
+.gldp-default table {
+    border-spacing: 1px;
+    border-collapse: inherit;
+}
+/* Default row height */
+.gldp-default tr { line-height: 18px }
+/* Default style of cell */
+.gldp-default td {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/* Previous and Next arrows */
+.gldp-default-prevnext {
+    font-family: "times new roman";
+    color: #222;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* Month Year title */
+.gldp-default-monyear {
+    color: #20C;
+    font-weight: bold;
+}
+/* Days of the week (Sun, Mon, ...) */
+.gldp-default-dow { text-transform: uppercase }
+/* Selectable days */
+.gldp-default-day {
+    background-color: #fff;
+    color: #222;
+    border: solid 1px #fff;
+}
+.gldp-default-day-hover {
+    background-color: #E3E9FF;
+    cursor: pointer;
+    border: 1px solid #E3E9FF;
+}
+/* Selected days */
+.gldp-default-selected {
+    background-color: #E3E9FF;
+    color: #222;
+    border: 1px solid #E3E9FF;
+}
+/* Today */
+.gldp-default-today {
+    background-color: #FFF7D7;
+    border: solid 1px #FAD163;
+    color: #000;
+}
+.gldp-default-today-hover {
+    background-color: #E3E9FF;
+    cursor: pointer;
+}
+/* Weekends */
+.gldp-default-sat,
+.gldp-default-sun {
+    background-color: #fff;
+    border: solid 1px #fff;
+}
+.gldp-default-sat-hover,
+.gldp-default-sun-hover {
+    background-color: #E3E9FF;
+    border: 1px solid #E3E9FF;
+    cursor: pointer;
+}
+/* Non-selectable day.  Includes:previous/next month days and days that fall in the allowOld and endDate conditions */
+.gldp-default-noday {
+    background-color: #fff;
+    border: solid 1px #fff;
+    color: #999;
+    cursor: wait;
+}
