@@ -1,0 +1,1 @@
+Privicons is a simple approach to expressing how you want your email to be treated by the recipient. Do you want it [X](X.md)kept secret? Or do you want the information to be [>]shared with the world? Think of it as washing tags for email privacy.
